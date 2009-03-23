@@ -5,7 +5,7 @@
 Summary:	WBXML parser and compiler library
 Name:		libwbxml
 Version:	0.10.4
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://libwbxml.opensync.org
@@ -27,7 +27,7 @@ in mobile communications.
 Group:		System/Libraries
 License:	LGPLv2+
 Summary:	Library for parsing WAP Binary XML
-Obsoletes:  %mklibname wbxml2 0
+Obsoletes:  %mklibname wbxml2_ 0
 
 %description -n %libname
 The WBXML Library (libwbxml) contains a library and its associated tools to
