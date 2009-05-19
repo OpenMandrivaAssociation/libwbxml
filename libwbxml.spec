@@ -4,12 +4,12 @@
 
 Summary:	WBXML parser and compiler library
 Name:		libwbxml
-Version:	0.10.4
-Release:	%mkrel 4
+Version:	0.10.7
+Release:	%mkrel 1
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://libwbxml.opensync.org
-Source:		http://prdownloads.sourceforge.net/wbxmllib/%{name}-%{version}.tar.bz2
+Source:		http://prdownloads.sourceforge.net/wbxmllib/%{name}-%{version}.tar.gz
 Requires:	expat >= 2.0.1
 BuildRequires:	cmake
 BuildRequires:	expat-devel >= 2.0.1
