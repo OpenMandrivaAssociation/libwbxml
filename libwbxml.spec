@@ -4,7 +4,7 @@
 
 Summary:	WBXML parser and compiler library
 Name:		libwbxml
-Version:	0.10.7
+Version:	0.10.8
 Release:	%mkrel 1
 License:	LGPLv2+
 Group:		System/Libraries
