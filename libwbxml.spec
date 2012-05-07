@@ -1,21 +1,20 @@
-%define major 0
+%define major 1
 %define libname %mklibname wbxml %{major}
 %define develname %mklibname wbxml -d
 
 Summary:	WBXML parser and compiler library
 Name:		libwbxml
-Version:	0.10.9
-Release:	%mkrel 1
+Version:	0.11.0
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://libwbxml.opensync.org
-Source:		http://prdownloads.sourceforge.net/wbxmllib/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/project/libwbxml/libwbxml/%{version}/%{name}-%{version}.tar.gz
 Requires:	expat >= 2.0.1
 BuildRequires:	cmake
 BuildRequires:	expat-devel >= 2.0.1
 BuildRequires:	popt-devel
 BuildRequires:	zlib-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The WBXML Library (libwbxml) contains a library and its associated tools to
@@ -62,32 +61,17 @@ compile applications that need to parse WBXML.
 %make
 
 %install
-rm -rf %{buildroot}
 cd build
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
-
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
-
 %files
-%defattr(-,root,root)
 %doc ChangeLog AUTHORS
 %{_bindir}/*
 
 %files -n %libname
-%defattr(-,root,root)
 %{_libdir}/*.so.%{major}*
 
 %files -n %{develname}
-%defattr(-,root,root)
 %doc README References TODO
 %{_includedir}/*
 %{_libdir}/*.so
