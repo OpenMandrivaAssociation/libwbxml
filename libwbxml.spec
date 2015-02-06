@@ -5,7 +5,7 @@
 Summary:	WBXML parser and compiler library
 Name:		libwbxml
 Version:	0.11.0
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://libwbxml.opensync.org
