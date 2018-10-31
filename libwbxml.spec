@@ -4,7 +4,7 @@
 
 Name: libwbxml
 Version: 0.11.4
-Release: 1
+Release: 2
 Source0: https://github.com/libwbxml/libwbxml/archive/libwbxml-%{version}.tar.gz
 Summary: WBXML (Binary XML) library
 URL: http://github.com/libwbxml
