@@ -3,7 +3,7 @@
 %define devname %mklibname wbxml2 -d
 
 Name: libwbxml
-Version:	0.11.7
+Version:	0.11.8
 Release:	1
 Source0: https://github.com/libwbxml/libwbxml/archive/libwbxml-%{version}.tar.gz
 Summary: WBXML (Binary XML) library
